@@ -2,7 +2,7 @@ import React from "react";
 import { useGLTF,Center } from "@react-three/drei";
 
 export default function Model() {
-  const model = useGLTF(`${import.meta.env.BASE_URL}Models/Iphone.glb`);
+  const model = useGLTF(`${import.meta.env.BASE_URL}Models/IphoneModel.glb`);
 
   return (
     <Center>
