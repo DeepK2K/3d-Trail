@@ -103,3 +103,50 @@ html, body {
   font-size: large;
   font-weight: 600;
 }
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.spec-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.spec-card-title{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.spec-card-title span{
+  font-size: large;
+  font-weight: 600;
+}
+
+.spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+}
+
+.spec-card h3 {
+  color: #0af;
+  margin-bottom: 0.5rem;
+}
+
+.spec-card p {
+  color: #ddd;
+}
+
+.spec-card.highlight {
+  background: linear-gradient(145deg, #0af, #08c);
+  color: #000;
+  text-align: center;
+}
+
+.spec-card.highlight h3 {
+  color: #000;
+}

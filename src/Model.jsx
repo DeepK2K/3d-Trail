@@ -1,12 +1,12 @@
 import React from "react";
-import { useGLTF, Center } from "@react-three/drei";
+import { useGLTF,Center } from "@react-three/drei";
 
+export default function Model() {
+  const model = useGLTF(`${import.meta.env.BASE_URL}Models/Iphone.glb`);
 
-export default function Model(props) {
-  const { scene } = useGLTF("/Models/Iphone.glb");
   return (
     <Center>
-      <primitive object={scene} scale={25} {...props} />
+      <primitive object={model.scene} scale={25} position={[0, 0, 0]} />
     </Center>
   );
 }
